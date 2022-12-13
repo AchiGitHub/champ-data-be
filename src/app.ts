@@ -9,7 +9,8 @@ import logger from './utils/logger';
 import routes from './routes/routes.index';
 import dbConnect from './utils/dbConnect';
 
-const port = config.get<number>('port') | 1337;
+const envPort: any = process.env.PORT;
+const port = envPort || 3000;
 
 const app = express();
 
