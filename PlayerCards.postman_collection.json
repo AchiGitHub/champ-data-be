@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "0b48b69a-adc7-48cf-aa04-214bba8076f3",
+		"name": "PlayerCards",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6274883"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/api/v1/playercard/all",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"v1",
+						"playercard",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"swapTime\":\"77:00\",\r\n    \"swapReason\":\"PlayerSwap\",\r\n    \"oldPlayer\":\"C. Ronaldo\",\r\n    \"newPlayer\":\"K. Mbappe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1337/api/v1/playercard/create",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"v1",
+						"playercard",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
